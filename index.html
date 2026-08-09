@@ -133,12 +133,75 @@
         </ul>
       </div>
 
-      <div class="hero__portrait" aria-hidden="false">
-        <span class="portrait-ring" aria-hidden="true"></span>
-        <div class="portrait-frame">
-          <img src="assets/headshot.JPG" alt="Evan Guerra Headshot">
-          <span class="portrait-fallback">EG</span>
+      <div class="hero__side">
+        <div class="hero__portrait" aria-hidden="false">
+          <span class="portrait-ring" aria-hidden="true"></span>
+          <div class="portrait-frame">
+            <img src="assets/headshot.JPG" alt="Evan Guerra Headshot">
+            <span class="portrait-fallback">EG</span>
+          </div>
         </div>
+
+        <!-- ============ NEWS ============
+             Hand-curated highlights reel, newest first. It doesn't pull live from the
+             rest of the page — add a new <li> here whenever something below changes,
+             and link href="#section" to the part of the site it summarizes. -->
+        <aside class="news-panel" aria-label="Recent updates">
+          <div class="news-panel__head">
+            <span class="news-panel__dot" aria-hidden="true"></span>
+            <h2 class="news-panel__title">News</h2>
+          </div>
+          <ol class="news-list">
+            <li class="news-item">
+              <a href="#awards">
+                <span class="news-item__date">2026</span>
+                <span class="news-item__text">Awarded the Lucille M. Wert Scholar Award, ACS Division of Chemical Information</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#publications">
+                <span class="news-item__date">2026</span>
+                <span class="news-item__text">New review in <em>The Journal of Nutrition</em> on complementary &amp; integrative health informatics</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#publications">
+                <span class="news-item__date">2026</span>
+                <span class="news-item__text">Presenting a research-integrity assessment protocol at WCRI 2026</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#mentorship">
+                <span class="news-item__date">2026</span>
+                <span class="news-item__text">Co-presenting chemosensory NLP work with mentees Danni Wu &amp; Sameer Komoravolu at MSLD</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#experience">
+                <span class="news-item__date">Sept 2025</span>
+                <span class="news-item__text">Began a visiting PhD placement at the Monell Chemical Senses Center</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#awards">
+                <span class="news-item__date">2025</span>
+                <span class="news-item__text">1st place leaderboard, DREAM Olfaction Prediction ML Challenge</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#publications">
+                <span class="news-item__date">2024</span>
+                <span class="news-item__text">Biomedical relation-extraction pipeline published in <em>Database</em></span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#mentorship">
+                <span class="news-item__date">Aug 2024</span>
+                <span class="news-item__text">Became Seminar Coordinator for the UIUC&#8209;NLP Seminar</span>
+              </a>
+            </li>
+          </ol>
+        </aside>
       </div>
     </div>
   </section>
@@ -426,6 +489,10 @@
 
         <article class="pub-card hover-card" data-type="journal" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/whole-person-health.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[4]</span>
             <div>
               <h3>Advancing Whole-Person Health through Informatics: A Narrative Review of Knowledge Resources for Complementary and Integrative Health</h3>
@@ -440,6 +507,10 @@
 
         <article class="pub-card hover-card" data-type="journal" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/biomedical-relation-extraction.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[2]</span>
             <div>
               <h3>Integrating Deep Learning Architectures for Enhanced Biomedical Relation Extraction: A Pipeline Approach</h3>
@@ -454,6 +525,10 @@
 
         <article class="pub-card hover-card" data-type="conference" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/trustworthiness-protocol.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[6]</span>
             <div>
               <h3>Automated Assessment of the Trustworthiness of Biomedical Publications: A Protocol for a Scoping Review</h3>
@@ -468,6 +543,10 @@
 
         <article class="pub-card hover-card" data-type="conference" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/olfactory-info-extraction.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[5]</span>
             <div>
               <h3>Scientific Olfactory Information Extraction: Toward a Unified NLP Framework for Chemosensory Knowledge Discovery</h3>
@@ -482,6 +561,10 @@
 
         <article class="pub-card hover-card" data-type="conference" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/smell-disorders-neurodegenerative.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[3]</span>
             <div>
               <h3>Extracting Smell Disorders as Early Indicators of Neurodegenerative Diseases Using Natural Language Processing</h3>
@@ -496,6 +579,10 @@
 
         <article class="pub-card hover-card" data-type="conference" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/sweet-preferences.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">[1]</span>
             <div>
               <h3>Cross-Country Comparison of Sweet Preferences in Online Reviews of Food Products</h3>
@@ -510,6 +597,10 @@
 
         <article class="pub-card hover-card" data-type="review" tabindex="0">
           <div class="pub-card__main">
+            <div class="pub-card__thumb">
+              <span class="pub-card__thumb-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 16l-5.5-5.5a2 2 0 0 0-2.8 0L5 18"/></svg></span>
+              <img src="assets/pubs/covid-olfactory-dysfunction.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
             <span class="pub-card__no">&mdash;</span>
             <div>
               <h3>Olfactory Dysfunction in Children and Adolescents with COVID-19: A Meta-Analysis</h3>
